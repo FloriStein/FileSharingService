@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import Todos from './components/Todos.vue'
+import { Authenticator } from "@aws-amplify/ui-vue";
+import "@aws-amplify/ui-vue/styles.css";
+import FileManager from './components/FileManager.vue';
 </script>
 
 <template>
-  <main>
-    <Todos />
-  </main>
+  <authenticator>
+    <template v-slot="{ signOut }">
+      <FileManager :signOut="signOut" />
+    </template>
+  </authenticator>
 </template>
 
