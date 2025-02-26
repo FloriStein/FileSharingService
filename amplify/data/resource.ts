@@ -46,13 +46,5 @@ export const data = defineData({
       /** Ablaufzeit für API-Schlüssel in Tagen */
       expiresInDays: 30,
     },
-  },
-  logging: {
-    /** Gibt an, ob detaillierte Logs ausgeschlossen werden sollen */
-    excludeVerboseContent: false,
-    /** Legt die Protokollstufe für Felder fest */
-    fieldLogLevel: 'all',
-    /** Dauer der Log-Aufbewahrung */
-    retention: '1 month'
   }
 });
